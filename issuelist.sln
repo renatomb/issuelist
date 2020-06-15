@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "issuelist.Android", "issuelist.Android\issuelist.Android.csproj", "{28A16332-6435-4D7A-9B05-D4A89428D3F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "issuelist", "issuelist\issuelist.csproj", "{1715F4C7-6777-48F3-BA29-EF69EA7AB0E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28A16332-6435-4D7A-9B05-D4A89428D3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A16332-6435-4D7A-9B05-D4A89428D3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A16332-6435-4D7A-9B05-D4A89428D3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A16332-6435-4D7A-9B05-D4A89428D3F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1715F4C7-6777-48F3-BA29-EF69EA7AB0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1715F4C7-6777-48F3-BA29-EF69EA7AB0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1715F4C7-6777-48F3-BA29-EF69EA7AB0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1715F4C7-6777-48F3-BA29-EF69EA7AB0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
