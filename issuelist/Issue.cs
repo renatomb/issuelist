@@ -3,8 +3,7 @@ namespace issuelist
 {
     public class Issue
     {
-        public Issue()
-        {
-        }
+        public String title { get; set; }
+        public String body { get; set; }
     }
 }

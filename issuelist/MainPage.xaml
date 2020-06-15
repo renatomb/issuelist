@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="issuelist.MainPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="issuelist.MainPage" Title="GitHub Issues - Login">
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text="Este aplicativo permite visualizar as Issues abertas atribuídas ao seu usuário do github. Efetue login com seu usuário e senha do github para visualizar a sua lista de pendências."></Label>
+        <Label Text="Credenciais do GitHub" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Scale="2"></Label>
+        <Entry x:Name="enLogin" Placeholder="Username do github" Text="demoapsrenato"></Entry>
+        <Entry x:Name="enPass" Placeholder="Senha ou token do github" Text="demorenato@2020" IsPassword="True"></Entry>
+        <Button x:Name="btLogin" Text="Efetuar login" Clicked="btLogin_Clicked"></Button>
     </StackLayout>
 </ContentPage>

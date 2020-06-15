@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="issuelist.PageIssues">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="issuelist.PageIssues" Title="Issues Abertos">
+    <StackLayout>
+        <ListView x:Name="lvIssues" ItemsSource="{Binding lv}" ItemTapped="lvIssues_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding title}"></TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Entry x:Name="enTitulo" Placeholder="Titulo do issue" IsVisible="false"></Entry>
+        <Picker x:Name="pkRepo" Title="Selecione um repositório" ItemsSource="{Binding Repos}" ItemDisplayBinding="{Binding name}" IsVisible="false"></Picker>
+        <Entry x:Name="enTexto" Placeholder="Descreva o problema" HeightRequest="100" IsVisible="false"></Entry>
+        <Button x:Name="btnIncluir" Text="Incluir Issue" Clicked="btnIncluir_Clicked" IsVisible="true"></Button>
+        <Button x:Name="btnAdd" Text="Cadastrar" IsVisible="false" Clicked="btnAdd_Clicked"></Button>
+    </StackLayout>
 </ContentPage>
